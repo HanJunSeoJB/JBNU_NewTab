@@ -1,4 +1,4 @@
-import * as chromeAPI from "./chromeAPI.js";
+import * as chromeAPI from "../src/Utils/chromeAPI.js";
 import * as htmlParser from "./htmlParser.js";
 
 const univURL = `http://www.jbnu.ac.kr/kor/?menuID=139`;

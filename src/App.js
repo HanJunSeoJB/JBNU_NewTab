@@ -1,4 +1,5 @@
 import logo from './assets/images/logo.png';
+import NoticeList from './Components/NoticeList';
 import './App.css';
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
                 <h2>
                     오늘 올라온 공지 글
                 </h2>
-                <div className="notice-list" id="noticeList"></div>
+                <div className="notice-list" id="noticeList">
+                    <NoticeList/>
+                </div>
             </div>
             <div className="keyword-notice-group" id="keywordNoticeGroup">
                 <div className="keyword-grid" id="keywordGrid">
