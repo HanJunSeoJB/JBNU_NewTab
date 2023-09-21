@@ -1,4 +1,4 @@
-import * as common from '../../public/common.js';
+import * as common from '../common.js';
 
 function getLocal(key) {
     return new Promise((resovle, reject) => {
