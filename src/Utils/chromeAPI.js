@@ -1,3 +1,4 @@
+/* global chrome */
 import * as common from '../common.js';
 
 function getLocal(key) {
