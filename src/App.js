@@ -1,8 +1,14 @@
 import logo from './assets/images/logo.png';
 import NoticeList from './Components/NoticeList';
+import KeywordComponent from './Components/KeywordForm';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './fonts/Fonts.css'
+
+
 
 function App() {
+
   return (
     <div>
       <div className="logo-group">
@@ -26,20 +32,14 @@ function App() {
                     <h2>
                         키워드 검색
                     </h2>
-                    <div className="keyword-add-btn" id="keywordAddBtn">+</div>
+                    <KeywordComponent/>
                     <div className="keyword-list" id="keywordList"></div>
                 </div>
                 <div className="keyword-notice-list" id="keywordNoticeList"></div>
             </div>
         </div>
     </div>
-    <div className="keyword-input-group" id="keywordInputGroup" hidden>
-        <div className="keyword-input-grid">
-            <input type="text" class="form-control keyword-input" id="keywordInput" placeholder="키워드를 입력해주세요!"/>
-            <button className="btn btn-primary ms-2" id="keywordSubmit">추가</button>
-            <button className="btn btn-secondary ms-2" id="keywordInputGroupCloseBtn">닫기</button> 
-        </div>
-    </div>
+
     <a className="report-and-question" href="mailto:cwssasi@gmail.com?subject=[전북대새탭] 문의 및 오류 제보">문의 및 오류 제보</a>
     </div>
   );

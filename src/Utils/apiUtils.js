@@ -1,4 +1,5 @@
 import * as htmlParser from "./htmlParser.js";
+import * as ChromeAPI from "./chromeAPI.js";
 
 const univURL = `http://www.jbnu.ac.kr/kor/?menuID=139`;
 let noticeList = []

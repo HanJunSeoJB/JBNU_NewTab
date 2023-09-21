@@ -82,7 +82,7 @@ function parseHTMLWithPivotDate(html, pivotDate){
 
         // 링크
         re = /<a href="([^>"]*)\"/g;
-        notice['leftLink'] = "https://www.jbnu.ac.kr/kor" + re.exec(trElement[j])[1];
+        notice['leftLink'] = "https://www.jbnu.ac.kr/kor" + re.exec(trElement[j])[1].replaceAll("amp;", "");
 
         // 날짜
         re = /<td class="mview">([0-9]{4}.[0-9]{2}.[0-9]{2})<\/td>/g;
